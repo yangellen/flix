@@ -36,13 +36,13 @@
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D2U-VN-9eM">
-                                                    <rect key="frame" x="155" y="27" width="239" height="28.666666666666671"/>
+                                                    <rect key="frame" x="155" y="15.000000000000002" width="239" height="28.666666666666671"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oUA-DU-2kR">
-                                                    <rect key="frame" x="155" y="63.000000000000007" width="239" height="20.333333333333336"/>
+                                                    <rect key="frame" x="155" y="51" width="239" height="20.333333333333329"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -55,10 +55,10 @@
                                                 <constraint firstItem="Vdh-ww-pM4" firstAttribute="top" secondItem="t8W-YP-cBx" secondAttribute="topMargin" constant="4" id="Ad7-yr-CSw"/>
                                                 <constraint firstItem="oUA-DU-2kR" firstAttribute="leading" secondItem="Vdh-ww-pM4" secondAttribute="trailing" constant="21" id="D50-ok-LJr"/>
                                                 <constraint firstItem="oUA-DU-2kR" firstAttribute="top" secondItem="D2U-VN-9eM" secondAttribute="bottom" constant="7.3300000000000001" id="HRi-U9-AJQ"/>
+                                                <constraint firstItem="D2U-VN-9eM" firstAttribute="top" secondItem="t8W-YP-cBx" secondAttribute="topMargin" constant="4" id="PGi-1U-Z0o"/>
                                                 <constraint firstAttribute="bottomMargin" relation="greaterThanOrEqual" secondItem="oUA-DU-2kR" secondAttribute="bottom" constant="10" id="hPB-Rj-Hbn"/>
                                                 <constraint firstAttribute="bottomMargin" relation="greaterThanOrEqual" secondItem="Vdh-ww-pM4" secondAttribute="bottom" constant="10" id="jk9-Tn-4XL"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="oUA-DU-2kR" secondAttribute="trailing" id="tbh-Hw-T03"/>
-                                                <constraint firstItem="D2U-VN-9eM" firstAttribute="top" secondItem="t8W-YP-cBx" secondAttribute="topMargin" constant="16" id="u1Z-BP-iVi"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
