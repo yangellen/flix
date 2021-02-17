@@ -35,9 +35,8 @@
                                                         <constraint firstAttribute="width" constant="110" id="hwP-T5-zgL"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D2U-VN-9eM">
-                                                    <rect key="frame" x="155" y="27" width="239" height="28"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D2U-VN-9eM">
+                                                    <rect key="frame" x="155" y="27" width="239" height="28.666666666666671"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -51,9 +50,12 @@
                                                 </label>
                                             </subviews>
                                             <constraints>
+                                                <constraint firstItem="D2U-VN-9eM" firstAttribute="trailing" secondItem="t8W-YP-cBx" secondAttribute="trailingMargin" id="2wd-VA-S2c"/>
                                                 <constraint firstItem="Vdh-ww-pM4" firstAttribute="leading" secondItem="t8W-YP-cBx" secondAttribute="leadingMargin" constant="4" id="3nL-fy-aHi"/>
+                                                <constraint firstItem="D2U-VN-9eM" firstAttribute="leading" secondItem="Vdh-ww-pM4" secondAttribute="trailing" constant="21" id="8rJ-Vh-L1R"/>
                                                 <constraint firstItem="Vdh-ww-pM4" firstAttribute="top" secondItem="t8W-YP-cBx" secondAttribute="topMargin" constant="4" id="Ad7-yr-CSw"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="Vdh-ww-pM4" secondAttribute="bottom" constant="10" id="jk9-Tn-4XL"/>
+                                                <constraint firstAttribute="bottomMargin" relation="greaterThanOrEqual" secondItem="Vdh-ww-pM4" secondAttribute="bottom" constant="10" id="jk9-Tn-4XL"/>
+                                                <constraint firstItem="D2U-VN-9eM" firstAttribute="top" secondItem="t8W-YP-cBx" secondAttribute="topMargin" constant="16" id="u1Z-BP-iVi"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
