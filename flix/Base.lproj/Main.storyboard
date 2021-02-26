@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Kqq-0m-YEk">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ty3-ji-er7">
     <device id="retina5_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
@@ -87,7 +87,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="702.89855072463774" y="87.228260869565219"/>
+            <point key="canvasLocation" x="-2242" y="1123"/>
         </scene>
         <!--Movie Details View Controller-->
         <scene sceneID="oUL-wZ-ulh">
@@ -133,12 +133,31 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vLc-9D-rX4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1405.7971014492755" y="86.413043478260875"/>
+            <point key="canvasLocation" x="-2242" y="1844"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Tab Bar Controller-->
+        <scene sceneID="vzg-R7-wjk">
+            <objects>
+                <tabBarController id="ty3-ji-er7" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="JG4-Xf-jqH">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Kqq-0m-YEk" kind="relationship" relationship="viewControllers" id="aRD-O8-5mV"/>
+                        <segue destination="ome-aG-cWs" kind="relationship" relationship="viewControllers" id="Cys-Xe-4Pv"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1PH-47-JIU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1772" y="-360"/>
+        </scene>
+        <!--Now Playing-->
         <scene sceneID="yjD-C8-8HQ">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Kqq-0m-YEk" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Now Playing" image="now_playing_tabbar_item" id="cfV-gs-pn7"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="jVV-IZ-fla">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
@@ -151,10 +170,47 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f8d-3G-6fO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="34.782608695652179" y="87.723214285714278"/>
+            <point key="canvasLocation" x="-2242" y="404"/>
+        </scene>
+        <!--Superhero-->
+        <scene sceneID="0Ej-iJ-IvQ">
+            <objects>
+                <viewController id="Tfd-rp-MhF" customClass="MovieGridViewController" customModule="flix" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LEo-cS-Gfa">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="ega-1S-sTi"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Superhero" id="hRU-Pm-O1q"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2ru-Yp-CCW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1214" y="1123"/>
+        </scene>
+        <!--Superhero-->
+        <scene sceneID="sve-61-qPt">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ome-aG-cWs" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Superhero" image="superhero_tabbar_item" id="Z2r-oL-NdL"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="7ic-Pc-6AF">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Tfd-rp-MhF" kind="relationship" relationship="rootViewController" id="MwL-uC-LJP"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VuO-Cn-fSM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1214.4927536231885" y="403.53260869565219"/>
         </scene>
     </scenes>
     <resources>
+        <image name="now_playing_tabbar_item" width="21" height="21"/>
+        <image name="superhero_tabbar_item" width="21" height="23"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
