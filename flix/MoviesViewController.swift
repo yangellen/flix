@@ -11,8 +11,11 @@ import AlamofireImage
 class MoviesViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
    @IBOutlet weak var tableView: UITableView!
-   
+
+   //() indicates creation of something
    var movies = [[String:Any]]()
+
+   // A function run the first time that a screen comes up
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -31,7 +34,10 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
          } else if let data = data {
             let dataDictionary = try! JSONSerialization.jsonObject(with: data, options: []) as! [String: Any]
 
+            //Get the array of movies and store the movies in a property to use elsewhere
             self.movies = dataDictionary["results"] as! [[String:Any]]
+
+            //reload table view data
             self.tableView.reloadData()
 
          }
