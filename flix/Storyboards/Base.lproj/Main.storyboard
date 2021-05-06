@@ -183,11 +183,27 @@
                         <outlet property="posterView" destination="usD-2r-bp8" id="ql9-lI-9eh"/>
                         <outlet property="synopsisLabel" destination="0t2-bi-qtP" id="u9a-cE-K0b"/>
                         <outlet property="titleLabel" destination="6ga-cQ-2Gl" id="KlW-O4-Vcr"/>
+                        <segue destination="yUO-Hw-YJt" kind="presentation" modalPresentationStyle="fullScreen" id="212-SF-d0g"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qNv-MJ-fqK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1214.4927536231885" y="1842.3913043478262"/>
+        </scene>
+        <!--Trailer View Controller-->
+        <scene sceneID="RgI-FE-cIO">
+            <objects>
+                <viewController id="yUO-Hw-YJt" customClass="trailerViewController" customModule="flix" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SYi-qT-XCx">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="ZbA-IR-WHi"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="V8s-nH-jMd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-413" y="1843"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="vzg-R7-wjk">
