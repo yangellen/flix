@@ -41,6 +41,9 @@ class GridDetailViewController: UIViewController {
       
    }
     
+   @IBAction func onTap(_ sender: UITapGestureRecognizer) {
+
+   }
 
     /*
     // MARK: - Navigation
