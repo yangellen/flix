@@ -11,6 +11,7 @@ import AlamofireImage
 class MovieGridViewController: UIViewController, UICollectionViewDataSource,UICollectionViewDelegate {
 
    @IBOutlet weak var collectionView: UICollectionView!
+
    var movies = [[String:Any]]()
 
     override func viewDidLoad() {
@@ -21,10 +22,13 @@ class MovieGridViewController: UIViewController, UICollectionViewDataSource,UICo
 
       let layout = collectionView.collectionViewLayout as! UICollectionViewFlowLayout
 
-      layout.minimumLineSpacing = 4
-      layout.minimumInteritemSpacing = 4
+      layout.minimumLineSpacing = 10  //controls the space in between the rows
+      layout.minimumInteritemSpacing = 10
 
-      let width = (view.frame.size.width - layout.minimumLineSpacing * 2) / 3
+      //3 posters per row
+      let width = (view.frame.size.width - layout.minimumInteritemSpacing * 2) / 3
+
+      //height to be 1.5X width
       layout.itemSize = CGSize(width: width, height: width * 3/2)
 
         //Download superhero movies
