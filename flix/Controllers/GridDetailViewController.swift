@@ -38,21 +38,22 @@ class GridDetailViewController: UIViewController {
       let backdropUrl = URL(string:"https://image.tmdb.org/t/p/w780" + backdropPath)
 
       backdropView.af_setImage(withURL: backdropUrl!)
-      
+
+
    }
     
    @IBAction func onTap(_ sender: UITapGestureRecognizer) {
-
+      
    }
 
-    /*
-    // MARK: - Navigation
 
+    // MARK: - Navigation
+/*
     // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    override func prepare(for segue: trailerViewController, sender: Any?) {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
     }
-    */
+*/
 
 }

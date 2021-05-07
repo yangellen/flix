@@ -6,15 +6,34 @@
 //
 
 import UIKit
+import WebKit
 
-class trailerViewController: UIViewController {
+class trailerViewController: UIViewController, WKUIDelegate {
+
+   @IBOutlet weak var webView: WKWebView!
+
+   /*
+   override func loadView() {
+      let webConfiguration = WKWebViewConfiguration()
+      webView = WKWebView(frame: .zero, configuration: webConfiguration)
+      webView.uiDelegate = self
+      view = webView
+   }
+   */
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
+
+        let myURL = URL(string:"https://www.apple.com")
+        let myRequest = URLRequest(url: myURL!)
+        webView.load(myRequest)
     }
     
+   @IBAction func returnButton(_ sender: Any) {
+      dismiss(animated: true, completion: nil)
+   }
+
 
     /*
     // MARK: - Navigation

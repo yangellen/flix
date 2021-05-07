@@ -150,7 +150,7 @@
                                     <constraint firstAttribute="height" constant="256" id="hcC-Dh-vB9"/>
                                 </constraints>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="usD-2r-bp8">
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="usD-2r-bp8">
                                 <rect key="frame" x="20" y="186" width="128" height="197"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <gestureRecognizers/>
@@ -206,13 +206,43 @@
                     <view key="view" contentMode="scaleToFill" id="SYi-qT-XCx">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WfF-q5-imQ">
+                                <rect key="frame" x="30" y="30" width="354" height="466"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oYY-5Z-rfN">
+                                <rect key="frame" x="161" y="588" width="92" height="30"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <state key="normal" title="Go Back!"/>
+                                <connections>
+                                    <action selector="returnButton:" destination="yUO-Hw-YJt" eventType="touchUpInside" id="SMO-0m-T9R"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="ZbA-IR-WHi"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="WfF-q5-imQ" secondAttribute="trailing" constant="30" id="OQO-Og-rkA"/>
+                            <constraint firstItem="ZbA-IR-WHi" firstAttribute="bottom" secondItem="WfF-q5-imQ" secondAttribute="bottom" constant="240" id="OUo-8d-eOb"/>
+                            <constraint firstItem="WfF-q5-imQ" firstAttribute="leading" secondItem="ZbA-IR-WHi" secondAttribute="leading" constant="30" id="Qg6-yG-SJ6"/>
+                            <constraint firstItem="ZbA-IR-WHi" firstAttribute="bottom" secondItem="oYY-5Z-rfN" secondAttribute="bottom" constant="118" id="Y7B-Xc-pVN"/>
+                            <constraint firstItem="oYY-5Z-rfN" firstAttribute="centerX" secondItem="SYi-qT-XCx" secondAttribute="centerX" id="bEf-RB-vft"/>
+                            <constraint firstItem="oYY-5Z-rfN" firstAttribute="top" secondItem="WfF-q5-imQ" secondAttribute="bottom" constant="92" id="d25-Pr-Uv8"/>
+                            <constraint firstItem="WfF-q5-imQ" firstAttribute="top" secondItem="ZbA-IR-WHi" secondAttribute="top" constant="30" id="dXJ-PX-DTG"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="webView" destination="WfF-q5-imQ" id="K7g-T1-nhr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="V8s-nH-jMd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1214" y="2602"/>
+            <point key="canvasLocation" x="-1214.4927536231885" y="2601.358695652174"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="vzg-R7-wjk">
