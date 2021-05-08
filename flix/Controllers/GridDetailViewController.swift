@@ -33,6 +33,8 @@ class GridDetailViewController: UIViewController {
       if let posterPath = movie["poster_path"] as? String{
          let posterUrl = URL(string: baseUrl + posterPath)
          posterView.af_setImage(withURL: posterUrl!)
+      }else{
+         posterView.image = #imageLiteral(resourceName: "reel_tabbar_icon")
       }
 
 
@@ -40,9 +42,9 @@ class GridDetailViewController: UIViewController {
          let backdropUrl = URL(string:"https://image.tmdb.org/t/p/w780" + backdropPath)
          backdropView.af_setImage(withURL: backdropUrl!)
 
+      }else{
+         backdropView.image = #imageLiteral(resourceName: "reel_tabbar_icon")
       }
-
-
 
    }
     
