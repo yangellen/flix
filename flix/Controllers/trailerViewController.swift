@@ -10,21 +10,21 @@ import WebKit
 
 class trailerViewController: UIViewController, WKUIDelegate {
 
-   @IBOutlet weak var webView: WKWebView!
+  // var webView: WKWebView!
 
+   @IBOutlet weak var webView: WKWebView!
    var trailers = [[String:Any]]()
    var movieID: Int!
 
 
-   /*
+/*
    override func loadView() {
       let webConfiguration = WKWebViewConfiguration()
       webView = WKWebView(frame: .zero, configuration: webConfiguration)
       webView.uiDelegate = self
       view = webView
    }
-   */
-
+*/
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -32,10 +32,10 @@ class trailerViewController: UIViewController, WKUIDelegate {
 
     }
     
-   @IBAction func returnButton(_ sender: Any) {
+   @IBAction func backButton(_ sender: Any) {
       dismiss(animated: true, completion: nil)
    }
-
+   
    func getMovie(){
       let url = URL(string: "https://api.themoviedb.org/3/movie/\(movieID!)/videos?api_key=a07e22bc18f5cb106bfe4cc1f83ad8ed&language=en-US")!
       let request = URLRequest(url: url, cachePolicy: .reloadIgnoringLocalCacheData, timeoutInterval: 10)
