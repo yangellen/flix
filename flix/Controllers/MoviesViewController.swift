@@ -12,7 +12,8 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
 
    @IBOutlet weak var tableView: UITableView!
 
-   //() indicates creation of something
+   //() indicates creation of something,
+   // array of dictionaries, [typeOfKey:typeOfValue]
    var movies = [[String:Any]]()
 
    // A function run the first time that a screen comes up
@@ -22,7 +23,7 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
       tableView.dataSource = self
       tableView.delegate = self
 
-        // Do any additional setup after loading the view.
+      // Do any additional setup after loading the view.
       
       let url = URL(string: "https://api.themoviedb.org/3/movie/now_playing?api_key=a07e22bc18f5cb106bfe4cc1f83ad8ed")!
       let request = URLRequest(url: url, cachePolicy: .reloadIgnoringLocalCacheData, timeoutInterval: 10)
